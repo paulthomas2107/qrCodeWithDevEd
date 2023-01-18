@@ -15,6 +15,10 @@
     <input type="text" name="link">
     <button type="submit">Generate QR Code</button>
 </form>
+<div class="generated">
+    <img src="{{data}}" alt="QRCode">
+    <p>Here is the QR Code we generated for you.</p>
+</div>
 </body>
 </html>
 <style>
@@ -59,6 +63,12 @@
     padding: 1rem 1.5rem;
     cursor: pointer;
     border-radius: 0.5rem;
+    }
+    .generated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 </style>
 
